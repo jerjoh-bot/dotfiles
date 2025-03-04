@@ -117,10 +117,15 @@ alias nv='nvim'
 alias vi='nv'
 alias vim='nv'
 alias xm='tmux'
-alias bat='bat --theme="Dracula"'
+alias bat='bat --theme="gruvbox-dark"'
 alias neo='cd ~/.config/nvim'
 alias tt='cd ~/testordner'
+alias fzfb='fzf --preview "bat --color=always {}"'
+alias fzfnv='nvim $(fzf --preview="bat --color=always {}")'
+
 export EDITOR="nvim"
+
+source <(fzf --zsh)
 
 eval "$(rbenv init -)"
 
@@ -135,3 +140,7 @@ function y() {
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 eval "$(atuin init zsh)"
+
+eval "$(zoxide init zsh)"
+
+

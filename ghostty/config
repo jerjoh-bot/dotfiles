@@ -1,0 +1,10 @@
+theme = catppuccin-mocha
+# theme = GruvboxDark
+# font-family = 3270 Nerd Font Regular
+# font-family = 3270 Nerd Font Regular
+font-family = 3270 Nerd Font Regular
+font-size = 16
+background-opacity = 0.80
+gtk-titlebar = false
+# custom-shader = /home/chris/bloom.glsl
+#custom-shader = /home/chris/crt.glsl

@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
-vim.cmd(":Copilot enable")
+vim.cmd("Copilot enable")
 require("null-ls")
 require("lspconfig")
 require("mason")
